@@ -17,3 +17,10 @@ class Spaceship extends Phaser.GameObjects.Sprite{
         this.x = game.config.width;
     }
 }
+
+class Supership extends Spaceship{
+    constructor(scene,x,y,texture,frame,pointValue){
+        super(scene,x,y,texture,frame,pointValue);
+        this.moveSpeed = game.settings.spaceshipSpeed * 2;
+    }
+}
